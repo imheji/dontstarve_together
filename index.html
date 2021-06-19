@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		section {background: black; }
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		body,p {margin: 0;}
+		h1 {margin-bottom: 25px;}
+		header{background: yellow; height:1200px;  background:yellow; margin:0; }
+		img{width: 100%;}
+		a{text-decoration: none; color: white; }
+		section.mid {overflow: hidden;}
+
+
+		
+
+		.ghost {background :blue;   text-align:center; }
+		.row {display: flex; width: 800px;  margin: auto; 
+			margin-bottom:10px}
+		.row2 {display: flex; width: 1000px;  margin: auto; 
+			margin-bottom:10px}
+		.row3 {display: flex; width: 1200px;  margin: auto; 
+			margin-bottom:10px}
+
+		.relative{position: relative;}
+		.absolute{display: block; position: absolute;}
+		
+		.col-2{width: 290px; margin: 0px 5px;}
+		.col-3{width: 390px; margin: 0px 5px;}
+		.col-4{width: 590px; margin: 0px 5px;}
+		.col-5{width: 1190px; margin: 0px 5px;}
+		
+		
+		.bg-header{background: url('main.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;}
+		.bg-black {background: black;}
+
+		.bg-image{background: url('middle.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-attachment: fixed;}
+
+		.bg-end {background: url('end.jpg');
+					background-size: contain;
+					background-repeat: no-repeat;}
+
+		.bg-footer {background: url('footer.jpg');
+					background-size: contain;
+					background-repeat: no-repeat;}
+
+		.bg{height: 600px;}
+
+		.bg2{height: 1300px;}
+		.bg3{height: 352.5px;}
+		
+		.bg-character1{background: url('wilson-b.jpg');
+					   background-size: contain;
+						background-repeat: no-repeat;}
+
+
+		.bg-character2{background: url('willow-b.jpg');
+					   background-size: contain;
+						background-repeat: no-repeat;}
+
+		.bg-character3{background: url('wx-b.jpg');
+					   background-size: contain;
+						background-repeat: no-repeat;}
+
+		.bg-character4{background: url('wendy-b.jpg');
+					   background-size: contain;
+						background-repeat: no-repeat;}
+
+		.bg-character5{background: url('wes-b.jpg');
+					   background-size: contain;
+						background-repeat: no-repeat;}
+
+
+		.character1{left: -170px; width:600px; top: 80px; z-index: 33;}
+
+						.character1:hover {transform: rotate(6deg);}
+		.character2{left: 450px; width:600px; top: 130px; z-index: 33;}
+						.character2:hover {transform: rotate(6deg);}
+		.character3{left: -190px; width:600px; top: 100px; z-index: 33;}
+						.character3:hover {transform: rotate(6deg);}
+		.character4{left: 420px; width:600px; top: 120px; z-index: 33;}
+						.character4:hover {transform: rotate(6deg);}
+		.character5{left: -170px; width:600px; top: -45px; z-index: 33;}
+						.character5:hover {transform: rotate(6deg);}
+
+
+
+
+		.sticker1{left: -230px;width:300px;top: 550px; z-index: 33;}
+
+		.sticker2{left: 800px;width:300px;top: 350px; z-index: 33;}
+
+		.sticker3{left:-190px;width:300px;top: -50px; z-index: 33;}
+
+		.sticker4{left: 650px;width:300px;top: 450px; z-index: 33;}
+
+
+		.sticker5 {left: 380px; top: 0px; z-index: 0;}
+	
+
+
+
+		.white{color: white;
+				font-size: 2.3rem;
+				font-weight: 500;}
+
+		.black {color: white;
+				font-size: 3rem;
+				font-weight:700;
+				text-shadow: 0px 0px 10px #808080;}
+
+		.black1 {color: white;
+				font-size: 4rem;
+				line-height: 1.3;
+				font-weight:700;}
+
+
+
+		.bold  {color: white;
+				font-size: 2.3rem;
+				font-weight:500;}
+
+		.regular {color: white;
+				 font-size: 1.9rem;
+				 font-weight:500;
+				 opacity: 90%;}
+
+				 .regular:hover {transform: scale(1.05);}
+
+		.buy {color: white;
+				font-size: 2.3rem;
+				font-weight: 500;}
+
+				.buy:hover {transform: scale(1.05);
+							}
+
+
+
+
+
+	
+
+		.regular::after{ opacity: 100%; }
+
+			
+
+
+		.align-left {text-align: left;}
+		.align-center {text-align: center;}
+		.align-right {text-align: right;}
+
+		.intro { padding-bottom : 50px; width: 900px; line-height: 50px;
+					margin: auto; }
+
+		.end { padding-top : 300px; width: 900px; line-height: 50px;
+					margin: auto; overflow: hidden;}
+
+		.normal {padding-bottom: 100px; }
+
+		.bg-black {background: black; }
+		.bg-black2 {background: black;}
+		.term {margin-bottom: 50px;}
+		.middle {width: 1000px; margin: auto; padding-top: 50px;}
+		.charcater { margin: auto; padding-top: 50px;}
+		.middle-p { width: 750px; }
+		.text-top{padding-top:100px; }
+		.text-top2{padding-top:150px; }
+		.text-top3{padding-top:300px; }
+		.text-top4{padding-top:968px; }
+		.text-top5{padding-top:210px; }
+
+		.text-bottom{padding-bottom: 700px;}
+		.text-bottom2{padding-bottom: 200px;}
+		.text-bottom3{padding-bottom: 100px;}
+		.text-bottom4{padding-bottom: 50px;}
+
+		.bg-line {background: url('line.jpg');}
+		.flex {display: flex;justify-content: left;}
+
+		.img100{width: 100%;}
+		.img50{width:50%;}
+
+
+		.item{ 
+		      margin:10px;}
+
+		.width520{width: 520px;}
+		.width450{width: 450px;}
+		.width390{width: 390px;}
+		.width220{width: 220px;}
+		.width470{width: 470px;}
+		.height1000{height: 50px;}
+		.height450{height: 450px;}
+		.height550{height: 550px;}
+		.height350{height: 350px;}
+		.height250{height: 250px;} 
+		.height180{height: 190px;} 
+		.height150{height: 178px;} 
+		.height195{height: 210px;} 
+		.height100{height: 100px;} 
+		.height120{height: 120px;} 
+
+
+
+
+
+
+		.height60{height: 60px;} 
+
+
+		.logo{width: 60px; height: 80px; }
+
+			.logo:hover {transform: scale(1.05);}
+	
+
+		.underline{ display: inline-table; position: relative; }
+
+
+	
+
+
+		.underline::after{
+
+			content: "";
+			position: absolute;
+
+			display: block;
+			width: 0;
+			height: 3px;
+			left:0;
+			bottom: -2px;
+
+			background-color: white;
+		
+			text-decoration: none;
+			transition: 0.3s;
+
+		}
+
+		
+
+
+		.underline span{position: relative;z-index: 2;}
+
+		.content:hover 	.underline::after{ width: 100%; }
+
+
+
+
+		.sticker5 {left: 380px; top: 0px; z-index: 0; animation: leftright 2s cubic-bezier(.39,0,.62,1) infinite alternate;}
+
+		@keyframes leftright
+		{from{left:490px;}to {left:380px;}}
+
+
+		.sticker6{left: -650px;width:1000px;top: -350px; z-index: 33;animation:rightleft 2s cubic-bezier(.39,0,.62,1) infinite alternate; }
+
+		@keyframes rightleft
+		{from{left:-650px;}to {left:-540px;}}
+
+
+
+		.move {animation: wiggle 0.3s linear infinite both;}
+
+		@keyframes wiggle {
+			0% {transform: translate(0);}
+			20% {transform: translate(-2px, 2px);}
+			40% {transform: translate(-2px,-2px);}
+			60% {transform: translate(2px,2px);}
+			80% {transform: translate(2px,-2px);}
+			100% {transform: translate(0);}
+		}
+
+
+
+		.bg-end {background: url('end.jpg');
+							background-size: contain;
+							background-repeat: no-repeat;
+							animation: wiggle 0.3s linear infinite both;
+							}
+
+		.hid {overflow: hidden;}
+
+
+
+
+
+	
+
+
+
+
+
+
+		
+
+
+
+	</style> 
+</head>
+<body>
+	<header class="bg-header" >
+		<section class="ghost">
+			<div class="relative row"> 
+		  
+
+          	<div class="col-3"> 
+          		<img src="dark1.gif" class="absolute sticker1"> </div>
+         	 <div class="col-3"> 
+          		<img src="dark2.gif" class="absolute sticker2"> 
+          	 </div>
+
+          	</div>
+
+
+     	</div>
+
+		</section>
+		
+	</header>
+
+
+
+	<section>
+		<div class="normal bg-black">
+
+		 <div class="intro">
+
+			<div class="content">
+
+			<p class="bold align-left"> 이상한 생물, 위험, 놀라움으로 가득찬 <br><span class="underline">기묘한 미지의 세계</span>로 초대합니다. <br>이 낯선 땅의 미스터리를 풀면서 마음껏 즐겨보세요</p> 
+			<p class="bold align-center term"> .<br>.<br>.</p>
+
+		 </div>
+
+
+		 	<div class="relative row"> 
+
+
+		 	<div class="col-3"> 
+          		<img src="tape1.png" class="absolute sticker3"> </div>
+         	 <div class="col-3"> 
+          		<img src="tape2.png" class="absolute sticker4"> 
+          	 </div>
+
+          	</div>
+
+			  
+
+			<iframe width="940.8" height="529.2" src="https://www.youtube.com/embed/bVbyn7c1X6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ 		</div>
+
+
+	</section>	
+
+	<section class="mid">
+ 		<div class="middle bg-black2">
+
+	 			<div class="relative row2 text-bottom">
+					<div class="col-4">
+						<h1 class="black"> 타협없는 서바이벌 </h1>
+						<p class="bold term middle-p"> 지시사항? 없습니다. 도움도 드릴 수 없습니다. <br>빈손으로 시작해서 공예, 사냥, 연구, 농사를 <br>지으며 생존하세요. </p>
+					</div>
+
+					<div class="col-2">
+						<img src="monster.png" class="absolute sticker5">
+					</div>
+
+				</div>
+
+
+
+
+
+		
+			<div class="relative row2 text-bottom2">
+
+				<div class="col-3">
+					<img src="real monster2.png" class="absolute sticker6">
+				</div>
+
+				<div class="col-4 align-right">
+					<h1 class="black "> 기괴하고 매력적인 몬스터 </h1>
+					<p class="bold term "> 독특한 세계에 살고 있는<br> 이상한 생명체들을 만나보세요. </p>
+					
+				</div>
+
+			
+	        </div>
+
+
+	        <div>
+
+				<div class="relative text-bottom3">
+					<h1 class="black"> 임의로 생성되는 새로운 세계 </h1>
+					<p class="bold middle-p"> 새로운 세상을 원하십니까? 문제 없습니다. <br>언제든지 당신이 죽기를 기다리는,<br> 새로운 살아 숨쉬는 세상을 만들 수 있습니다. </p>
+					
+				</div>
+
+			</div>
+
+			
+		</div>
+
+	</section>
+
+
+	<section class="bg-image bg">
+
+	 <div>.</div>
+		
+	</section>
+		<div class="charcater bg-black">
+
+
+			<div class="align-center text-top3">
+				<h1 class="black"> 다양한 캐릭터 </h1>
+				<p class="bold"> 각 캐릭터는 서로 다른 특징을 가집니다. </p>
+			</div>
+
+			<div class="text-top2">
+
+				<div class="bg-character bg-character1 ">
+				
+							<div class=" relative row">
+						 	<div class="item flex">
+						 		<div class="item width520 height 450">
+						 			<div class="item height350"></div>
+						 			<div class="item height350">
+						 				<img src="wilson-c.gif" class="absolute character1">
+						 			</div>
+						 		</div>
+
+						 		<div class="item width220">
+						    		<div class="item height350"></div>
+						 			<div class="item height180"></div>
+						 			<div class="item height60">
+						 				<p class="regular">
+						 					<a href="https://www.youtube.com/watch?v=N0QhvmisGWU"target="_new">
+						 				view story!</a></p>
+						 				
+						 			</div>
+
+						 		</div>
+						 	</div>
+
+			
+
+
+						 </div>
+
+				<div class="height60"></div>
+
+				</div>
+
+				<div class="bg-character bg-character2">
+							<div class=" relative row">
+						 	<div class="item flex">
+						 		
+
+						 		<div class="item width220">
+						    		<div class="item height350"></div>
+						 			<div class="item height195"></div>
+						 			<div class="item height60">
+						 				<p class="regular">
+						 					<a href="https://www.youtube.com/watch?v=TKKXXKtFiQw"target="_new">
+						 				view story!</a>
+						 				</p>
+						 			</div>
+
+						 		</div>
+
+						 		<div class="item width520 height 450">
+						 			<div class="item height350"></div>
+						 			<div class="item height350">
+						 				<img src="willow-c.gif" class="absolute character2">
+						 			</div>
+						 		</div>
+
+						 	</div>
+
+				</div>
+
+
+
+				<div class="height60"></div>
+
+
+
+				<div class="bg-character bg-character3">
+							<div class=" relative row">
+						 	<div class="item flex">
+						 		<div class="item width470 height 450">
+						 			<div class="item height350"></div>
+						 			<div class="item height350">
+						 				<img src="wx-c.gif" class="absolute character3">
+						 			</div>
+						 		</div>
+
+						 		<div class="item width220">
+						    		<div class="item height350"></div>
+						 			<div class="item height195"></div>
+						 			<div class="item height60">
+						 				<p class="regular">
+						 					<a href="https://www.youtube.com/watch?v=wUlQPQ_Hl6w"target="_new">
+						 				view story!</a></p>
+						 			</div>
+
+						 		</div>
+						 	</div>
+				</div>
+
+
+				<div class="height60"></div>
+
+
+
+				<div class="bg-character bg-character4">
+							<div class=" relative row">
+						 	<div class="item flex">
+						 		
+
+						 		<div class="item width220">
+						    		<div class="item height350"></div>
+						 			<div class="item height195"></div>
+						 			<div class="item height60">
+						 				<p class="regular">
+						 					<a href="https://www.youtube.com/watch?v=7ozRwX35fHE"target="_new">
+						 				view story!</a>
+						 				</p>
+						 			</div>
+
+						 		</div>
+
+						 		<div class="item width520 height 450">
+						 			<div class="item height350"></div>
+						 			<div class="item height350">
+						 				<img src="wendy-c.gif" class="absolute character4">
+						 			</div>
+						 		</div>
+						 		
+						 	</div>
+
+				</div>
+
+
+				<div class="height60"></div>
+
+
+
+
+				<div class="bg-character bg-character5">
+							<div class=" relative row">
+						 	<div class="item flex">
+						 		<div class="item width390 height 450">
+						 			<div class="item height350"></div>
+						 			<div class="item height350">
+						 				<img src="wes-c.gif" class="absolute character5">
+						 			</div>
+						 		</div>
+
+						 		<div class="item width220">
+						    		<div class="item height350"></div>
+						 			<div class="item height150"></div>
+						 			<div class="item height60">
+						 				<p class="regular">
+						 					<a href="https://www.youtube.com/watch?v=ao61s4M7rtA"target="_new">
+						 				view story!</a>
+						 				</p>
+						 			</div>
+
+						 		</div>
+						 	</div>
+				</div>
+
+			</div>
+
+			
+		</div>
+
+
+	<section class="end">
+
+			<div class="text-bottom4">
+
+			<p class="bold align-center"> 친구 또는 낯선 사람과 온라인에서 협력하세요. <br>혹독한 환경에서 살아남기 위해 <br>다른 사람들과 함께 일할수도, <br>혼자 힘으로 해낼 수도 있을 것 입니다.</p> 
+
+			 </div>
+
+
+			<div class="text-bottom3 content">
+
+			<p class="black1 align-center text-top5"> 필요한 건 뭐든지 하세요, <br>하지만 <span class="underline">가장 중요한 건</span></p> 
+			<p class="black align-center term"> <br><br>.<br><br><br>.<br><br><br><br>.<br><br><br><br>.</p>
+
+		 </div>
+		
+	</section>
+
+
+	<section class="mid">
+
+
+	<section class="bg-end bg2">
+
+
+		 		<div class=" align-center text-top4">
+		 			
+		 			<p class="buy"><a href="https://store.steampowered.com/app/322330/Dont_Starve_Together/"target="_new">buy now!</a></p>
+		 	
+		 		</div>
+
+	
+		
+	</section>
+
+	</section>
+
+	<footer class="bg-footer bg3">
+	
+  					 <div class="relative row3 text-top5 ">
+					<div class="col-2 logo">
+						<a href="https://www.klei.com/"target="_new"><img src="logo.png"></a>
+					</div>
+
+					<div class="col-5">
+						<p class="align-right"> <br>ⓒAll Character Image Rights Reserved Klei Entertainment 2021<br>
+							Website designed by Heji Lim</p>
+
+					</div>
+
+	</footer>
+
+</body>
+</html>
